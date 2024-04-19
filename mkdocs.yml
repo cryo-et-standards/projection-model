@@ -1,0 +1,60 @@
+site_name: $NAME A specification for cryo-ET projection geometry
+site_url: https://sitename.bla
+site_author: bla
+site_description: >-
+  A specification for cryo-ET projection geometry
+repo_name: orgname/repo
+repo_url: https://github.com/orgname/repo
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2022 - 2024 orgname
+
+
+# Custom navigation can be specified
+#nav:
+#  - Overview: index.md
+#  - Examples:
+#      - single data block: subfolder/file.md
+
+
+theme:
+  icon:
+    logo: material/cube-outline
+  name: material
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+
+  features:
+    - navigation.instant
+    - navigation.expand
+    - search.highlight
+    - search.suggest
+    - content.tabs.link
+
+markdown_extensions:
+  - admonition
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+
+plugins:
+  - search
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
